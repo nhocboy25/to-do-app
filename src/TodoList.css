@@ -1,0 +1,152 @@
+body {
+    background: url("https://static.vecteezy.com/system/resources/previews/006/575/431/non_2x/cute-nature-floral-flower-leaf-minimalist-girly-background-wallpaper-vector.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .complete-btn {
+    background: green;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  .complete-btn:hover {
+    background: darkgreen;
+  }
+  
+  .task-item input {
+    margin-right: 10px;
+  }
+  
+  .task-item.completed span {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .delete-btn:hover {
+  background: darkred;
+}
+    
+  
+.todo-container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f8f9fa;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  .input-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+  }
+  
+  .task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap; /* Cho phép xuống dòng khi nội dung quá dài */
+}
+
+.task-text {
+  flex: 1;
+  text-align: left;
+  word-wrap: break-word;
+  white-space: normal;
+  overflow-wrap: break-word;
+  max-width: 70%; /* Giới hạn chiều rộng để không bị đẩy nút xóa quá xa */
+}
+
+.complete-btn, .delete-btn {
+  flex-shrink: 0; /* Giữ cố định kích thước nút */
+}
+
+  
+  
+  .delete-btn {
+    background: red;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+  }
+  
+  .delete-btn:hover {
+    background: darkred;
+  }
+.tabs {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.tabs button {
+  align-items: center;
+  margin-right: 0;
+  padding: 6px 16px;
+  background: #eee;
+  cursor: pointer;
+  border-radius:12px;
+  color: #333;
+}
+.tabs button.active {
+  background: #007bff;
+  color: #fff;
+}
+  
